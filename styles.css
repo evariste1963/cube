@@ -1,7 +1,19 @@
 :root {
-  --size: 25rem;
-  --halfsize: 12.5rem;
-  --halfsizen: -12.5rem;
+  --size: 40rem;
+  --halfsize: 20rem;
+  --halfsizen: -20rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  font-size: 70%;
 }
 
 .container {
@@ -36,6 +48,13 @@
     rgba(27, 27, 27, 0.8) 0px 30px 20px -20px;
 }
 
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .back {
   transform: translateZ(var(--halfsizen)) rotateY(180deg);
 }
@@ -62,7 +81,42 @@
   -webkit-filter: blur(25px);
 }
 .front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: translateZ(var(--halfsize));
+  transform-style: preserve-3d;
+  position: absolute;
+}
+.front a{
+  position: absolute;
+  top: 2rem;
+  background-color: #fff;
+  
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--bgform);
+  letter-spacing: 0.2rem;
+}
+
+
+.signup-btn,
+.menu-btn,
+.contact-btn {
+  left: 1rem;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 100% 0.5rem 0.5rem 100%;
+  cursor: pointer;
+}
+
+.signin-btn,
+.signup-btn1,
+.menu-btn1 {
+  right: 1rem;
+  padding: 0.6rem 3rem 0.5rem 1rem;
+  border-radius: 0.5rem 100% 100% 0.5rem;
+  cursor: pointer;
 }
 
 @keyframes spin {
