@@ -1,0 +1,79 @@
+:root {
+  --size: 25rem;
+  --halfsize: 12.5rem;
+  --halfsizen: -12.5rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(31, 7, 7, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/bg.jpg) center no-repeat;
+  background-size: cover;
+  perspective: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 100rem;
+  /*perspective-origin: 100% ;*/
+}
+
+.cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100rem;
+  transform-style: preserve-3d;
+}
+
+.cube div {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background-color: rgba(131, 122, 122, 0.5);
+  box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset,
+    rgba(27, 27, 27, 0.8) 0px 30px 20px -20px;
+}
+
+.back {
+  transform: translateZ(var(--halfsizen)) rotateY(180deg);
+}
+.right {
+  transform: rotateY(-270deg) translateX(var(--halfsize));
+  transform-origin: top right;
+}
+.left {
+  transform: rotateY(270deg) translateX(var(--halfsizen));
+  transform-origin: center left;
+}
+.top {
+  transform: rotateX(-90deg) translateY(var(--halfsizen));
+  transform-origin: top center;
+}
+.bottom {
+  transform: rotateX(90deg) translateY(var(--halfsize)) translateZ(-10rem);
+  transform-origin: bottom center;
+  border-radius: 35% !important;
+  background-color: rgba(94, 89, 89, 0.9) !important;
+  box-shadow: none !important;
+  /*transition: 0.4s ease-in-out transform, 0.4s ease-in-out;*/
+  filter: blur(25px);
+  -webkit-filter: blur(25px);
+}
+.front {
+  transform: translateZ(var(--halfsize));
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.cube {
+  animation: spin 5s infinite linear;
+}
