@@ -3,6 +3,7 @@
   --halfsize: 20rem;
   --halfsizen: -20rem;
   --bgform: rgba(40, 114, 108, 0.5);
+  --deg: 0deg;
 }
 
 * {
@@ -41,7 +42,7 @@ html {
   /* perspective-origin: 100% ; */
 }
 
-.cube {
+#cube {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,7 @@ html {
   transition: transform 0.5s, left 0.5s;
 }
 
-.cube form {
+#cube form {
   position: absolute;
   width: var(--size);
   height: var(--size);
@@ -143,18 +144,19 @@ form a {
   justify-content: center;
   cursor: pointer;
 }
-
-.signup-btn,
-.menu-btn,
-.contact-btn {
+.signin-btnL,
+.signup-btnL,
+.menu-btnL,
+.contact-btnL {
   left: 1rem;
   padding: 0.5rem 1rem 0.5rem 3rem;
   border-radius: 100% 0.5rem 0.5rem 100%;
 }
 
-.signin-btn,
-.signup-btn1,
-.menu-btn1 {
+.signin-btnR,
+.signup-btnR,
+.menu-btnR,
+.contact-btnR {
   right: 1rem;
   padding: 0.6rem 3rem 0.5rem 1rem;
   border-radius: 0.5rem 100% 100% 0.5rem;
@@ -168,16 +170,18 @@ h2 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* @keyframes spin {
+@keyframes spin {
   from {
     transform: rotateY(0);
   }
   to {
     transform: rotateY(360deg);
   }
-} */
+}
 
-.cube {
-  transform: rotateY(0deg);
-  /*animation: spin 5s infinite linear;*/
+#cube {
+  animation: spin 5s linear infinite;
+
+  /* transform: rotateY(var(--deg));*/
+  /* transform-origin: bottom center; */
 }
