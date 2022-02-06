@@ -11,10 +11,15 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  
 }
 
-a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+a[href],
+input[type="submit"],
+input[type="image"],
+label[for],
+select,
+button,
+.pointer {
   cursor: pointer;
 }
 
@@ -43,6 +48,7 @@ html {
   position: absolute;
   /* width: 100rem; */
   transform-style: preserve-3d;
+  transition: transform 0.5s, left 0.5s;
 }
 
 .cube form {
@@ -68,7 +74,7 @@ html {
   transform: rotateY(-270deg) translateX(var(--halfsize));
   transform-origin: top right;
 }
-.left {
+.contact-us {
   transform: rotateY(270deg) translateX(var(--halfsizen));
   transform-origin: center left;
 }
@@ -86,7 +92,7 @@ html {
   filter: blur(25px);
   -webkit-filter: blur(25px);
 }
-.front {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +102,7 @@ html {
   /* position: absolute; */
   background-color: var(--bgform);
 }
-.front a {
+.menu a {
   position: absolute;
   top: 2rem;
   background-color: rgba(255, 255, 255, 0.5);
@@ -104,9 +110,7 @@ html {
   text-transform: uppercase;
   color: var(--bgform);
   letter-spacing: 0.2rem;
-  
 }
-
 
 .inputs-wrapper p {
   color: #fff;
@@ -144,15 +148,13 @@ html {
   border-radius: 0.5rem 100% 100% 0.5rem;
 }
 
-.front h2 {
+.menu h2 {
   margin-top: 4rem;
   font-size: 2.3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: rgba(255, 255, 255, 0.8);
 }
-
-
 
 @keyframes spin {
   from {
@@ -164,5 +166,6 @@ html {
 }
 
 .cube {
-  animation: spin 5s infinite linear;
+  transform: rotateY(0deg);
+  /*animation: spin 5s infinite linear;*/
 }
