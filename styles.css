@@ -55,7 +55,7 @@ html {
   position: absolute;
   width: var(--size);
   height: var(--size);
-  /* background-color: var(--bgform);  */
+  background-color: var(--bgform);
   box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
 }
 
@@ -67,10 +67,10 @@ html {
   margin-top: 5rem;
 }
 
-.back {
+.sign-in {
   transform: translateZ(var(--halfsizen)) rotateY(180deg);
 }
-.right {
+.sign-up {
   transform: rotateY(-270deg) translateX(var(--halfsize));
   transform-origin: top right;
 }
@@ -102,7 +102,19 @@ html {
   /* position: absolute; */
   background-color: var(--bgform);
 }
-.menu a {
+
+.sign-up,
+.sign-in,
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center;  */
+
+  /* position: absolute; */
+  background-color: var(--bgform);
+}
+form a {
   position: absolute;
   top: 2rem;
   background-color: rgba(255, 255, 255, 0.5);
@@ -148,7 +160,7 @@ html {
   border-radius: 0.5rem 100% 100% 0.5rem;
 }
 
-.menu h2 {
+h2 {
   margin-top: 4rem;
   font-size: 2.3rem;
   text-transform: uppercase;
@@ -156,14 +168,14 @@ html {
   color: rgba(255, 255, 255, 0.8);
 }
 
-@keyframes spin {
+/* @keyframes spin {
   from {
     transform: rotateY(0);
   }
   to {
     transform: rotateY(360deg);
   }
-}
+} */
 
 .cube {
   transform: rotateY(0deg);

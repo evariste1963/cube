@@ -9,12 +9,13 @@ const contactBtn1 = document.querySelector(".contact-btn1");
 contactBtn.addEventListener("click", (e) => {
   e.preventDefault();
   cube.style.transform = "rotateY(90deg)";
+  console.log("clicked");
 });
 
-contactBtn1.addEventListener("click", (e) => {
-  e.preventDefault();
-  cube.style.transform = "rotateY(0deg)";
-});
+// contactBtn1.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   cube.style.transform = "rotateY(0deg)";
+// });
 
 signupBtn1.addEventListener("click", (e) => {
   e.preventDefault();
