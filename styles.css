@@ -42,6 +42,32 @@ html {
   /* perspective-origin: 100% ; */
 }
 
+p.me {
+  margin-right: 3rem;
+  font-family: "Dekko";
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  color: #fff;
+  margin: auto 3rem 3rem auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  margin-top: auto;
+  text-align: right;
+  justify-content: right;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.5),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 0) 70.71%);
+  -webkit-text-fill-color: transparent;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  font-style: italic;
+}
+
 #inner-cube {
   display: flex;
   align-items: center;
