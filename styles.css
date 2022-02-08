@@ -45,16 +45,11 @@ html {
 p.me {
   margin-right: 3rem;
   font-family: "Dekko";
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 0.25rem;
   color: #fff;
   margin: auto 3rem 3rem auto;
-  margin-left: auto;
-  margin-bottom: 3rem;
-  margin-top: auto;
-  text-align: right;
-  justify-content: right;
   background: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.5),
@@ -73,7 +68,6 @@ p.me {
   align-items: center;
   justify-content: center;
   position: absolute;
-  /* width: 100rem; */
   transform-style: preserve-3d;
   transition: transform 0.5s, left 0.5s;
 }
@@ -82,7 +76,6 @@ p.me {
   align-items: center;
   justify-content: center;
   position: absolute;
-  /* width: 100rem; */
   transform-style: preserve-3d;
   transition: transform 0.5s, left 0.5s;
 }
@@ -98,7 +91,6 @@ p.me {
     ),
     linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%);
-  /*box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;*/
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -113,7 +105,6 @@ p.me {
     ),
     linear-gradient(127deg, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0) 70.71%);
-  /*box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;*/
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4);
 }
 .inputs-wrapper {
@@ -179,7 +170,6 @@ p.me {
   /*border-radius: 35% !important;*/
   background-color: rgba(94, 89, 89, 0.9) !important;
   box-shadow: none !important;
-  /*transition: 0.4s ease-in-out transform, 0.4s ease-in-out;*/
   filter: blur(25px);
   -webkit-filter: blur(25px);
 }
@@ -193,10 +183,8 @@ p.me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center;  */
   transform: translateZ(var(--halfsize));
   transform-style: preserve-3d;
-  /* position: absolute; */
   background-color: var(--bgform);
 }
 
@@ -206,9 +194,6 @@ p.me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center;  */
-
-  /* position: absolute; */
   background-color: var(--bgform);
 }
 form a {
