@@ -16,7 +16,7 @@ html {
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(94, 92, 92, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(94, 92, 92, 0.2)),
     url(images/bg.jpg) center no-repeat;
   background-size: cover;
   perspective: 100rem;
@@ -26,7 +26,7 @@ html {
   perspective: 100rem;
 }
 
-p.me {
+#author {
   margin-right: 3rem;
   font-family: "Dekko";
   font-size: 50px;
@@ -160,7 +160,7 @@ p.me {
   transform: rotateX(90deg) translateY(3.75rem) translateZ(-21.25rem);
   transform-origin: bottom center;
 
-  background-color: rgba(94, 89, 89, 0.9) !important;
+  background-color: rgba(51, 39, 39, 0.9) !important;
 
   filter: blur(25px);
   -webkit-filter: blur(25px);
@@ -211,9 +211,8 @@ p.me {
     transform: rotateY(-360deg);
   }
 }
-
 #center-cube {
-  animation: spin-center 3s linear infinite;
+  animation: spin-center 2s linear infinite;
 }
 
 @keyframes spin-inner {
@@ -226,7 +225,7 @@ p.me {
 }
 
 #inner-cube {
-  animation: spin-inner 3s linear infinite;
+  animation: spin-inner 4s linear infinite;
 }
 
 @keyframes spin {
@@ -239,5 +238,5 @@ p.me {
 }
 
 #outer-cube {
-  animation: spin 6s linear infinite;
+  animation: spin 10s linear infinite;
 }
