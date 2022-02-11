@@ -47,14 +47,9 @@ p.me {
   font-style: italic;
 }
 
-#inner-cube {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  transform-style: preserve-3d;
-}
-#outer-cube {
+#inner-cube,
+#outer-cube,
+#center-cube {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,6 +57,20 @@ p.me {
   transform-style: preserve-3d;
 }
 
+#center-cube div {
+  position: absolute;
+  width: 7.5rem;
+  height: 7.5rem;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.5),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  /* border-radius: 50%;*/
+}
 #inner-cube div {
   position: absolute;
   width: var(--halfsize);
@@ -90,12 +99,21 @@ p.me {
   box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
 }
 
+.center-back {
+  transform: translateZ(-3.75rem) rotateY(180deg);
+}
+
 .inner-back {
   transform: translateZ(-7.5rem) rotateY(180deg);
 }
 
 .back {
   transform: translateZ(var(--halfsizen)) rotateY(180deg);
+}
+
+.center-right {
+  transform: rotateY(-270deg) translateX(3.75rem);
+  transform-origin: top right;
 }
 
 .inner-right {
@@ -108,6 +126,11 @@ p.me {
   transform-origin: top right;
 }
 
+.center-left {
+  transform: rotateY(270deg) translateX(-3.75rem);
+  transform-origin: center left;
+}
+
 .inner-left {
   transform: rotateY(270deg) translateX(-7.5rem);
   transform-origin: center left;
@@ -118,6 +141,11 @@ p.me {
   transform-origin: center left;
 }
 
+.center-top {
+  transform: rotateX(-90deg) translateY(-3.75rem);
+  transform-origin: top center;
+}
+
 .inner-top {
   transform: rotateX(-90deg) translateY(-7.5rem);
   transform-origin: top center;
@@ -126,6 +154,16 @@ p.me {
 .top {
   transform: rotateX(-90deg) translateY(var(--halfsizen));
   transform-origin: top center;
+}
+
+.center-bottom {
+  transform: rotateX(90deg) translateY(3.75rem) translateZ(-21.25rem);
+  transform-origin: bottom center;
+
+  background-color: rgba(94, 89, 89, 0.9) !important;
+
+  filter: blur(25px);
+  -webkit-filter: blur(25px);
 }
 
 .inner-bottom {
@@ -147,6 +185,11 @@ p.me {
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.6);
 }
 
+.center-front {
+  transform: translateZ(3.75rem);
+  transform-style: preserve-3d;
+}
+
 .inner-front {
   transform: translateZ(7.5rem);
   transform-style: preserve-3d;
@@ -160,6 +203,19 @@ p.me {
   transform-style: preserve-3d;
 }
 
+@keyframes spin-center {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+#center-cube {
+  animation: spin-center 3s linear infinite;
+}
+
 @keyframes spin-inner {
   from {
     transform: rotateY(0);
@@ -170,7 +226,7 @@ p.me {
 }
 
 #inner-cube {
-  animation: spin-inner 2s linear infinite;
+  animation: spin-inner 3s linear infinite;
 }
 
 @keyframes spin {
