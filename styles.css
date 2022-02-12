@@ -203,16 +203,15 @@ html {
   transform-style: preserve-3d;
 }
 
-@keyframes spin-center {
+
+/* keyframes moved to JS*/
+/* @keyframes spin-center {
   from {
     transform: rotateY(0);
   }
   to {
     transform: rotateY(-360deg);
   }
-}
-#center-cube {
-  animation: spin-center 2s linear infinite;
 }
 
 @keyframes spin-inner {
@@ -222,21 +221,13 @@ html {
   to {
     transform: rotateY(360deg);
   }
-}
+} */
 
-#inner-cube {
-  animation: spin-inner 4s linear infinite;
-}
-
-@keyframes spin {
+/* @keyframes spin-outer {
   from {
     transform: rotateY(0);
   }
   to {
     transform: rotateY(-360deg);
   }
-}
-
-#outer-cube {
-  animation: spin 10s linear infinite;
-}
+} */
