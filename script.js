@@ -13,12 +13,14 @@ window.onload = function () {
   //   [{ transform: "rotateY(0)" }, { transform: "rotateY(360deg)" }],
   //   { duration: 5000, iterations: Infinity }
   // );
-
+};
+const center = function () {
   centerCube.animate(
     [{ transform: "rotateY(0)" }, { transform: "rotateY(-360deg)" }],
     { duration: 3000, iterations: Infinity }
   );
 };
+window.requestAnimationFrame(center);
 
 //using setInterval instead of above
 let angle = 0;
