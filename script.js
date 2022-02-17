@@ -5,7 +5,7 @@ const innerCube = document.getElementById("inner-cube");
 const centerCube = document.querySelector("#center-cube");
 
 const slow = 10000;
-const medium = slow * 0.6;
+const medium = slow * 0.5;
 const fast = medium * 0.6;
 
 //3 ways to crack the same egg
