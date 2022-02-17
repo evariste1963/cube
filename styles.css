@@ -55,6 +55,7 @@ html {
   justify-content: center;
   position: absolute;
   transform-style: preserve-3d;
+  border-radius: 50%;
 }
 
 #center-cube div {
@@ -64,12 +65,12 @@ html {
   background: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.5),
-      rgba(255, 0, 0, 0) 70.71%
+      s rgba(255, 0, 0, 0) 70.71%
     ),
     linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
-  /* border-radius: 50%;*/
+  border-radius: 50%;
 }
 #inner-cube div {
   position: absolute;
@@ -83,6 +84,7 @@ html {
     linear-gradient(127deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 70.71%);
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
 }
 
 #outer-cube div {
@@ -97,6 +99,7 @@ html {
     linear-gradient(127deg, rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0) 70.71%);
   box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
 }
 
 .center-back {
@@ -142,16 +145,19 @@ html {
 }
 
 .center-top {
+  opacity: 0;
   transform: rotateX(-90deg) translateY(-3.75rem);
   transform-origin: top center;
 }
 
 .inner-top {
+  opacity: 0;
   transform: rotateX(-90deg) translateY(-7.5rem);
   transform-origin: top center;
 }
 
 .top {
+  opacity: 0;
   transform: rotateX(-90deg) translateY(var(--halfsizen));
   transform-origin: top center;
 }
@@ -202,7 +208,6 @@ html {
   transform: translateZ(var(--halfsize));
   transform-style: preserve-3d;
 }
-
 
 /* keyframes moved to JS*/
 /* @keyframes spin-center {
