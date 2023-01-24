@@ -20,7 +20,7 @@ window.onload = function () {
 //same as above but using requestAnimationFrame as a 1 shot infinite call, which is a bit meaningless apparantly
 const center = function () {
   centerCube.animate(
-    [{ transform: "rotateY(0)" }, { transform: "rotateY(-360deg)" }],
+    [{ transform: "rotateY(0)" }, { transform: "rotateY(360deg)" }],
     { duration: fast, iterations: Infinity }
   );
 };
@@ -42,7 +42,7 @@ let angle = 0;
 function innerSpin() {
   angle >= 360
     ? (angle = 0)
-    : (innerCube.style.transform = `rotateY(${angle}deg)`);
+    : (innerCube.style.transform = `rotateX(${angle}deg)`);
   angle++;
 }
 setInterval(innerSpin, 14);
