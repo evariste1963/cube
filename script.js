@@ -3,7 +3,7 @@
 const outerCube = document.querySelector("#outer-cube");
 const innerCube = document.getElementById("inner-cube");
 const centerCube = document.querySelector("#center-cube");
-
+const ball = document.querySelector(".ball");
 const slow = 10000;
 const medium = slow * 0.5;
 const fast = medium * 0.6;

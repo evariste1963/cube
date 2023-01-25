@@ -49,7 +49,8 @@ html {
 
 #inner-cube,
 #outer-cube,
-#center-cube {
+#center-cube,
+b.ball {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,6 +207,51 @@ html {
   align-items: center;
   transform: translateZ(var(--halfsize));
   transform-style: preserve-3d;
+}
+
+b.ball {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin:  auto 0;
+  opacity: 0.5;
+  background: linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 0.5),
+    s rgba(255, 0, 0, 0) 70.71%
+  ),
+  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
+  border-radius: 50%;
+  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  background-image: -webkit-linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 0.5),
+    s rgba(255, 0, 0, 0) 70.71%
+  ),
+  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
+  background-image: -moz-linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 0.5),
+    s rgba(255, 0, 0, 0) 70.71%
+  ),
+  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
+  background-image: -o-linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 0.5),
+    s rgba(255, 0, 0, 0) 70.71%
+  ),
+  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
+  background-image: -ms-linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 0.5),
+    s rgba(255, 0, 0, 0) 70.71%
+  ),
+  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
 }
 
 /* keyframes moved to JS*/
