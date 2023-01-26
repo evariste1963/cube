@@ -214,12 +214,16 @@ b.ball {
   width: 10px;
   height: 10px;
   margin:  auto 0;
-  opacity: 0.7;
+  opacity: 0.35;
  /* animation: zoom-in-zoom-out 1s ease infinite;*/
- background: linear-gradient(217deg, rgba(211, 13, 13, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(27deg, rgba(3, 35, 3, 0.8), rgba(0,255,0,0) 70.71%);
+ background: radial-gradient(
+  circle at 65% 15%, 
+  rgb(248, 242, 242) 0.5px,
+  rgb(168, 228, 79) 3%, 
+  rgb(40, 3, 4) 60%,
+  rgb(1, 1, 10) 100%); 
        
-   border-radius: 50%;
+ border-radius: 50%;
 
 } 
 /*
