@@ -15,14 +15,18 @@ window.onload = function () {
     [{ transform: "rotateY(0)" }, { transform: "rotateY(-360deg)" }],
     { duration: slow, iterations: Infinity }
   );
-  ball.animate(
-    { transform: "scale(70, 70)" },
-    {
-      duration: 1300,
-      iterations: Infinity,
-    }
-  );
 };
+ball.animate(
+  [
+    { transform: "scale(1, 1)" },
+    { transform: "scale(5, 5)" },
+    { transform: "scale(1, 1)" },
+  ],
+  {
+    duration: 1000,
+    iterations: Infinity,
+  }
+);
 
 //same as above but using requestAnimationFrame as a 1 shot infinite call, which is a bit meaningless apparantly
 const center = function () {

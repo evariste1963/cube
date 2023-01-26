@@ -211,52 +211,30 @@ b.ball {
 
 b.ball {
   display: block;
-  width: 1px;
-  height: 1px;
+  width: 10px;
+  height: 10px;
   margin:  auto 0;
   opacity: 0.5;
- 
- background: linear-gradient(217deg, rgba(98, 3, 3, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(27deg, rgba(4, 59, 4, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(36deg, rgba(10, 10, 112, 0.8), rgba(0,0,255,0) 70.71%);
-  /*background: linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.5),
-    s rgba(255, 0, 0, 0) 70.71%
-  ),
-  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);*/
-  border-radius: 50%;
-  /*box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);*/
-  /* background-image: -webkit-linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.5),
-    s rgba(255, 0, 0, 0) 70.71%
-  ),
-  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
-  background-image: -moz-linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.5),
-    s rgba(255, 0, 0, 0) 70.71%
-  ),
-  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
-  background-image: -o-linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.5),
-    s rgba(255, 0, 0, 0) 70.71%
-  ),
-  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
-  background-image: -ms-linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.5),
-    s rgba(255, 0, 0, 0) 70.71%
-  ),
-  linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%); */
-}
+ /* animation: zoom-in-zoom-out 1s ease infinite;*/
+ background: linear-gradient(217deg, rgba(160, 7, 7, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(27deg, rgba(9, 165, 9, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(36deg, rgba(12, 12, 161, 0.8), rgba(0,0,255,0) 70.71%);
+   border-radius: 50%;
+
+} 
+/*
+@keyframes zoom-in-zoom-out{
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(5, 5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}*/
+
 
 /* keyframes moved to JS*/
 /* @keyframes spin-center {
