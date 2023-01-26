@@ -53,7 +53,7 @@ let angle = 0;
 function innerSpin() {
   angle >= 360
     ? (angle = 0)
-    : (innerCube.style.transform = `rotateX(${angle}deg)`);
+    : (innerCube.style.transform = `rotatex(${angle}deg)`);
   angle++;
 }
 setInterval(innerSpin, 14);

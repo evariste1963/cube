@@ -107,7 +107,7 @@ b.ball {
 }
 
 .inner-back {
-  transform: translateZ(-7.5rem) rotateY(180deg);
+  transform: translateZ(-7.5rem) rotateY(180deg) scale(101%);
 }
 
 .back {
