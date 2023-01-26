@@ -23,7 +23,7 @@ ball.animate(
     { transform: "scale(1, 1)" },
   ],
   {
-    duration: 1000,
+    duration: 2000,
     iterations: Infinity,
   }
 );
