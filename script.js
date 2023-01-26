@@ -19,7 +19,7 @@ window.onload = function () {
 ball.animate(
   [
     { transform: "scale(1, 1)" },
-    { transform: "scale(5, 5)" },
+    { transform: "scale(42, 42)" },
     { transform: "scale(1, 1)" },
   ],
   {

@@ -107,7 +107,7 @@ b.ball {
 }
 
 .inner-back {
-  transform: translateZ(-7.5rem) rotateY(180deg) scale(101%);
+  transform: translateZ(-7.5rem) rotateY(180deg);
 }
 
 .back {
@@ -214,11 +214,11 @@ b.ball {
   width: 10px;
   height: 10px;
   margin:  auto 0;
-  opacity: 0.5;
+  opacity: 0.7;
  /* animation: zoom-in-zoom-out 1s ease infinite;*/
- background: linear-gradient(217deg, rgba(160, 7, 7, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(27deg, rgba(9, 165, 9, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(36deg, rgba(12, 12, 161, 0.8), rgba(0,0,255,0) 70.71%);
+ background: linear-gradient(217deg, rgba(211, 13, 13, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(27deg, rgba(3, 35, 3, 0.8), rgba(0,255,0,0) 70.71%);
+       
    border-radius: 50%;
 
 } 
