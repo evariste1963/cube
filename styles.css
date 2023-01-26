@@ -211,19 +211,23 @@ b.ball {
 
 b.ball {
   display: block;
-  width: 3px;
-  height: 3px;
+  width: 1px;
+  height: 1px;
   margin:  auto 0;
-  opacity: 0.4;
-  background: linear-gradient(
+  opacity: 0.5;
+ 
+ background: linear-gradient(217deg, rgba(98, 3, 3, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(27deg, rgba(4, 59, 4, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(36deg, rgba(10, 10, 112, 0.8), rgba(0,0,255,0) 70.71%);
+  /*background: linear-gradient(
     217deg,
     rgba(255, 0, 0, 0.5),
     s rgba(255, 0, 0, 0) 70.71%
   ),
   linear-gradient(127deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0) 70.71%),
-  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);
+  linear-gradient(336deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0) 70.71%);*/
   border-radius: 50%;
-  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  /*box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);*/
   /* background-image: -webkit-linear-gradient(
     217deg,
     rgba(255, 0, 0, 0.5),
