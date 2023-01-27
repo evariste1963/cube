@@ -8,7 +8,7 @@ const ball = document.querySelector(".ball");
 const slow = 10000;
 const medium = slow * 0.5;
 const fast = medium * 0.6;
-let durationTime = 4000;
+let durationTime = 5000;
 
 //3 ways to crack the same egg
 //JS version of keyframes with added onload function call
@@ -46,8 +46,8 @@ root.style.setProperty("--ballTopColor", color1);
 ball.animate(
   [
     { transform: "scale(1, 1)" },
-    { transform: "scale(25, 25)" },
-    { transform: "scale(1, 1)" },
+    { transform: "scale(65, 65)" },
+    { transform: "scale(0, 0)" },
   ],
   {
     duration: durationTime,

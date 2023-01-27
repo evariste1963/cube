@@ -212,28 +212,29 @@ b.ball {
 
 b.ball {
   display: block;
-  width: 10px;
-  height: 10px;
-  margin:  auto 0;
+  width: 3px;
+  height: 3px;
+  margin: auto 0;
   opacity: 0.5;
- /* animation: zoom-in-zoom-out 1s ease infinite;*/
- background: radial-gradient(
-  circle at 65% 15%, 
-  rgb(248, 242, 242) 0.5px,
-  var(--ballTopColor) 3%, 
-  rgb(40, 3, 4) 60%,
-  rgb(1, 1, 10) 100%); 
-        border-radius: 50%;
-} 
-
-b.green-ball{
+  /* animation: zoom-in-zoom-out 1s ease infinite;*/
   background: radial-gradient(
-    circle at 65% 15%, 
-    rgb(248, 242, 242) 0.5px,
-    var(--ballTopColor) 3%, 
+    circle at 65% 15%,
+    rgb(248, 242, 242) 0.5%,
+    var(--ballTopColor) 5%,
     rgb(40, 3, 4) 60%,
-    rgb(1, 1, 10) 100%); 
+    rgb(1, 1, 10) 100%
+  );
+  border-radius: 50%;
+}
 
+b.green-ball {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgb(248, 242, 242) 0.5%,
+    var(--ballTopColor) 5%,
+    rgb(40, 3, 4) 60%,
+    rgb(1, 1, 10) 100%
+  );
 }
 /*
 @keyframes zoom-in-zoom-out{
@@ -247,7 +248,6 @@ b.green-ball{
     transform: scale(1, 1);
   }
 }*/
-
 
 /* keyframes moved to JS*/
 /* @keyframes spin-center {
