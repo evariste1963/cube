@@ -3,6 +3,7 @@
 const outerCube = document.querySelector("#outer-cube");
 const innerCube = document.getElementById("inner-cube");
 const centerCube = document.querySelector("#center-cube");
+const root = document.querySelector(":root");
 const ball = document.querySelector(".ball");
 const slow = 10000;
 const medium = slow * 0.5;
@@ -25,11 +26,10 @@ const randomNoGenerator = () =>
     .toString(16)
     .padStart(2, 0);
 
-// set and render random colors
+// set and render random color of ball
 const setColor = () => {
   let color1 = `#${randomNoGenerator()}${randomNoGenerator()}${randomNoGenerator()}`;
-
-  console.log(color1);
+  root.style.setProperty("--ballTopColor", color1);
 };
 
 function changeCol() {
@@ -39,6 +39,9 @@ function changeCol() {
   }
 }
 setInterval(changeCol, durationTime);
+
+root.style.setProperty("--ballTopColor", color1);
+/*document.documentElement.style.setProperty("--ballTopColor", color1);*/
 
 ball.animate(
   [

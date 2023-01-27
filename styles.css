@@ -2,6 +2,7 @@
   --size: 30rem;
   --halfsize: 15rem;
   --halfsizen: -15rem;
+  --ballTopColor: #a8e44f;
 }
 
 * {
@@ -219,7 +220,7 @@ b.ball {
  background: radial-gradient(
   circle at 65% 15%, 
   rgb(248, 242, 242) 0.5px,
-  rgb(79, 168, 228) 3%, 
+  var(--ballTopColor) 3%, 
   rgb(40, 3, 4) 60%,
   rgb(1, 1, 10) 100%); 
         border-radius: 50%;
@@ -229,7 +230,7 @@ b.green-ball{
   background: radial-gradient(
     circle at 65% 15%, 
     rgb(248, 242, 242) 0.5px,
-    rgb(168, 228, 79) 3%, 
+    var(--ballTopColor) 3%, 
     rgb(40, 3, 4) 60%,
     rgb(1, 1, 10) 100%); 
 
