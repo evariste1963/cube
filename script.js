@@ -47,7 +47,7 @@ ball.animate(
   [
     { transform: "scale(1, 1)" },
     { transform: "scale(65, 65)" },
-    { transform: "scale(0, 0)" },
+    { transform: "scale(1, 1)" },
   ],
   {
     duration: durationTime,
