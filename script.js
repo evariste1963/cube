@@ -7,6 +7,7 @@ const ball = document.querySelector(".ball");
 const slow = 10000;
 const medium = slow * 0.5;
 const fast = medium * 0.6;
+let durationTime = 4000;
 
 //3 ways to crack the same egg
 //JS version of keyframes with added onload function call
@@ -17,36 +18,13 @@ window.onload = function () {
   );
 };
 
-function hasClass(el, cN) {
-  setTimeout(changeCol, 2000);
-}
 function changeCol() {
-  if (hasClass(ball, "blue-ball")) {
-    ball.classList.remove("blue-ball");
-    ball.classList.add("green-ball");
-  } else if (hasClass(ball, "green-ball")) {
-    ball.classList.remove("green-ball");
-    ball.classList.add("blue-ball");
+  {
+    ball.classList.toggle("green-ball");
+    reset;
   }
 }
-setTimeout(changeCol, 2000);
-/*
-function changeCol2() {
-  ball.classList.remove("blue-ball");
-  ball.classList.add("green-ball");
-}
-
-function hasClass(el, cN) {
-  return "blue-ball";
-}
-function hasClass(el, cN) {
-  return "green-ball";
-}
-if (hasClass("green-ball")) {
-  setTimeout((changeCol1, 5000), 0);
-} else {
-  console.log("blue");
-}*/
+setInterval(changeCol, durationTime);
 
 ball.animate(
   [
@@ -55,7 +33,7 @@ ball.animate(
     { transform: "scale(1, 1)" },
   ],
   {
-    duration: 2000,
+    duration: durationTime,
     iterations: Infinity,
   }
 );
