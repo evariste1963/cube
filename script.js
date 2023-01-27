@@ -18,10 +18,24 @@ window.onload = function () {
   );
 };
 
+let color1;
+//random number generator
+const randomNoGenerator = () =>
+  Math.floor(Math.random() * 256)
+    .toString(16)
+    .padStart(2, 0);
+
+// set and render random colors
+const setColor = () => {
+  let color1 = `#${randomNoGenerator()}${randomNoGenerator()}${randomNoGenerator()}`;
+
+  console.log(color1);
+};
+
 function changeCol() {
   {
+    setColor();
     ball.classList.toggle("green-ball");
-    reset;
   }
 }
 setInterval(changeCol, durationTime);
