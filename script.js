@@ -16,11 +16,21 @@ window.onload = function () {
     { duration: slow, iterations: Infinity }
   );
 };
-function changeCol1() {
-  ball.classList.remove("green-ball");
-  ball.classList.add("blue-ball");
-}
 
+function hasClass(el, cN) {
+  setTimeout(changeCol, 2000);
+}
+function changeCol() {
+  if (hasClass(ball, "blue-ball")) {
+    ball.classList.remove("blue-ball");
+    ball.classList.add("green-ball");
+  } else if (hasClass(ball, "green-ball")) {
+    ball.classList.remove("green-ball");
+    ball.classList.add("blue-ball");
+  }
+}
+setTimeout(changeCol, 2000);
+/*
 function changeCol2() {
   ball.classList.remove("blue-ball");
   ball.classList.add("green-ball");
@@ -33,13 +43,10 @@ function hasClass(el, cN) {
   return "green-ball";
 }
 if (hasClass("green-ball")) {
-  console.log("green");
-  setTimeout(changeCol1, 5000);
-}
-if (hasClass("blue-ball")) {
+  setTimeout((changeCol1, 5000), 0);
+} else {
   console.log("blue");
-  setTimeout(changeCol2, 5000);
-}
+}*/
 
 ball.animate(
   [
