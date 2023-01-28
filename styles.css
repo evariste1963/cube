@@ -221,7 +221,7 @@ b.ball {
     circle at 65% 15%,
     rgb(248, 242, 242) 0.5%,
     var(--ballTopColor) 5%,
-    rgb(40, 3, 4) 60%,
+    rgb(24, 7, 7) 60%,
     rgb(1, 1, 10) 100%
   );
   border-radius: 50%;
@@ -232,7 +232,7 @@ b.green-ball {
     circle at 65% 15%,
     rgb(248, 242, 242) 0.5%,
     var(--ballTopColor) 5%,
-    rgb(40, 3, 4) 60%,
+    rgb(24, 7, 7) 60%,
     rgb(1, 1, 10) 100%
   );
 }

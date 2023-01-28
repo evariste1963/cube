@@ -17,9 +17,11 @@ window.onload = function () {
     [{ transform: "rotateY(0)" }, { transform: "rotateY(-360deg)" }],
     { duration: slow, iterations: Infinity }
   );
+  changeCol()
+  setInterval(changeCol, durationTime);
 };
 
-let color1;
+let ballColour;
 //random number generator
 const randomNoGenerator = () =>
   Math.floor(Math.random() * 256)
@@ -28,8 +30,8 @@ const randomNoGenerator = () =>
 
 // set and render random color of ball
 const setColor = () => {
-  let color1 = `#${randomNoGenerator()}${randomNoGenerator()}${randomNoGenerator()}`;
-  root.style.setProperty("--ballTopColor", color1);
+  let ballColour = `#${randomNoGenerator()}${randomNoGenerator()}${randomNoGenerator()}`;
+  root.style.setProperty("--ballTopColor", ballColour);
 };
 
 function changeCol() {
@@ -38,10 +40,8 @@ function changeCol() {
     ball.classList.toggle("green-ball");
   }
 }
-setInterval(changeCol, durationTime);
 
-root.style.setProperty("--ballTopColor", color1);
-/*document.documentElement.style.setProperty("--ballTopColor", color1);*/
+root.style.setProperty("--ballTopColor", ballColour);
 
 ball.animate(
   [
