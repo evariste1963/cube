@@ -61,8 +61,8 @@ b.ball {
 
 #center-cube div {
   position: absolute;
-  width: 7.5rem;
-  height: 7.5rem;
+  width:10rem;
+  height: 10rem;
   background: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.5),
@@ -104,7 +104,7 @@ b.ball {
 }
 
 .center-back {
-  transform: translateZ(-3.75rem) rotateY(180deg);
+  transform: translateZ(-5rem) rotateY(180deg);
 }
 
 .inner-back {
@@ -116,7 +116,7 @@ b.ball {
 }
 
 .center-right {
-  transform: rotateY(-270deg) translateX(3.75rem);
+  transform: rotateY(-270deg) translateX(5rem);
   transform-origin: top right;
 }
 
@@ -131,7 +131,7 @@ b.ball {
 }
 
 .center-left {
-  transform: rotateY(270deg) translateX(-3.75rem);
+  transform: rotateY(270deg) translateX(-5rem);
   transform-origin: center left;
 }
 
@@ -164,7 +164,7 @@ b.ball {
 }
 
 .center-bottom {
-  transform: rotateX(90deg) translateY(3.75rem) translateZ(-21.25rem);
+  transform: rotateX(90deg) translateY(5rem) translateZ(-20.25rem);
   transform-origin: bottom center;
 
   background-color: rgba(51, 39, 39, 0.9) !important;
