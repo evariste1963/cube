@@ -8,7 +8,8 @@ const ball = document.querySelector(".ball");
 const slow = 10000;
 const medium = slow * 0.5;
 const fast = medium * 0.6;
-let durationTime = 5000;
+let durationTime = 6000;
+let ballSize = durationTime / 80;
 
 //3 ways to crack the same egg
 //JS version of keyframes with added onload function call
@@ -17,7 +18,7 @@ window.onload = function () {
     [{ transform: "rotateY(0)" }, { transform: "rotateY(-360deg)" }],
     { duration: slow, iterations: Infinity }
   );
-  changeCol()
+  changeCol();
   setInterval(changeCol, durationTime);
 };
 
@@ -46,7 +47,7 @@ root.style.setProperty("--ballTopColor", ballColour);
 ball.animate(
   [
     { transform: "scale(1, 1)" },
-    { transform: "scale(65, 65)" },
+    { transform: `scale(${ballSize}, ${ballSize})` },
     { transform: "scale(1, 1)" },
   ],
   {

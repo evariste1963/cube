@@ -215,14 +215,14 @@ b.ball {
   width: 3px;
   height: 3px;
   margin: auto 0;
-  opacity: 0.5;
+  opacity: 0.6;
   /* animation: zoom-in-zoom-out 1s ease infinite;*/
   background: radial-gradient(
     circle at 65% 15%,
     rgb(248, 242, 242) 0.5%,
     var(--ballTopColor) 5%,
-    rgb(24, 7, 7) 60%,
-    rgb(1, 1, 10) 100%
+    rgb(23, 7, 7) 60%,
+    rgb(0, 0, 7) 100%
   );
   border-radius: 50%;
 }
